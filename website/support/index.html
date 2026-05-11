@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Orbit Support</title>
+    <meta name="description" content="Get support for Orbit accounts, location permissions, QR scans, Happenings, clubs, and privacy requests." />
+    <link rel="icon" type="image/png" href="../assets/orbit-icon.png" />
+    <link rel="stylesheet" href="../assets/site.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-shell site-nav" aria-label="main navigation">
+        <a class="brand-link" href="../index.html" aria-label="Orbit home">
+          <img class="brand-mark" src="../assets/orbit-icon.png" alt="" />
+          <span>Orbit</span>
+        </a>
+        <div class="nav-links">
+          <a class="nav-link" href="../index.html">Marketing</a>
+          <a class="nav-link" href="../terms/index.html">Terms</a>
+          <a class="nav-link" href="../privacy/index.html">Privacy</a>
+          <a class="nav-link" href="../support/index.html" aria-current="page">Support</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="site-shell page-main">
+      <section class="page-hero">
+        <p class="eyebrow">Questions?</p>
+        <h1>Orbit Support</h1>
+        <p class="page-lede">
+          Get help with your account, location permissions, QR scans, Happenings, clubs, or privacy requests.
+        </p>
+      </section>
+
+      <div class="support-layout">
+        <section class="section" aria-labelledby="support-form-title">
+          <h2 id="support-form-title">Contact Support</h2>
+          <form class="support-form" data-web3forms-form>
+            <input type="hidden" name="access_key" value="00ad7029-a7b8-4e91-977b-218336ce3db0" />
+            <input type="hidden" name="subject" value="New Orbit support request" />
+            <input type="hidden" name="from_name" value="Orbit Support Page" />
+            <label class="hidden-field">
+              Leave this field empty
+              <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" />
+            </label>
+
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+
+            <div class="form-row">
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic" required>
+                <option value="">Choose a topic</option>
+                <option>Account access</option>
+                <option>Location permission</option>
+                <option>QR code scans</option>
+                <option>Happenings or clubs</option>
+                <option>Report abuse or safety issue</option>
+                <option>Privacy or deletion request</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                minlength="10"
+                placeholder="What happened? Include your device, app version if known, and the steps that led to the issue."
+                required
+              ></textarea>
+            </div>
+
+            <button class="button primary" type="submit">Send Request</button>
+            <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+          </form>
+        </section>
+
+        <aside class="contact-options" aria-label="other support options">
+          <a class="contact-option" href="https://github.com/kerrse/orbit/">
+            <strong>Open a GitHub issue</strong>
+            <span>Best for bugs, feature requests, and reproducible technical problems.</span>
+          </a>
+          <a class="contact-option" href="../privacy/index.html">
+            <strong>Privacy policy</strong>
+            <span>Read how Orbit handles accounts, location, camera access, and support data.</span>
+          </a>
+          <a class="contact-option" href="../index.html">
+            <strong>Marketing page</strong>
+            <span>Return to the Orbit overview page.</span>
+          </a>
+        </aside>
+      </div>
+
+      <section class="feature-grid" aria-label="common support topics">
+        <article class="feature">
+          <h2>Location</h2>
+          <p>
+            Orbit needs location permission to confirm your city and show nearby Happenings and clubs.
+            If permission was denied, enable it in your device settings.
+          </p>
+        </article>
+        <article class="feature">
+          <h2>QR Friend Adds</h2>
+          <p>
+            QR scanning uses camera permission only when you choose to scan. 
+            If scanning fails, confirm camera access and try again in good lighting.
+          </p>
+        </article>
+        <article class="feature">
+          <h2>Account Deletion</h2>
+          <p>
+            You can delete your account from the profile screen in the app.
+            Deletion is permanent and removes your profile, friendships, clubs, Happenings, and avatar uploads where supported.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-shell footer-row">
+        <span>&copy; <span data-current-year></span> Orbit</span>
+        <div class="footer-links">
+          <a href="../terms/index.html">Terms</a>
+          <a href="../privacy/index.html">Privacy Policy</a>
+          <a href="../support/index.html">Support</a>
+          <a href="https://github.com/kerrse/orbit">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/site.js"></script>
+  </body>
+</html>
